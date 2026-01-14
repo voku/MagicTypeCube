@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Analysis Wisdom Cube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- PrismJS for Syntax Highlighting - Light Theme -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup-templating.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
+
+    <style>
+      body {
+        /* background-color removed to let App component handle the background */
+        color: #0f172a; /* slate-900 */
+        margin: 0;
+        font-family: 'Inter', system-ui, sans-serif;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9; /* slate-100 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; /* slate-300 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; /* slate-400 */
+      }
+      /* Override Prism background to match our theme */
+      pre[class*="language-"] {
+        background: transparent !important;
+        text-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      code[class*="language-"], pre[class*="language-"] {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        font-size: 0.85rem !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "PHP Static Analysis Magic Cube",
+  "description": "A 3D interactive cube that reveals modern PHPDoc wisdom for static analysis.",
+  "requestFramePermissions": []
+}
