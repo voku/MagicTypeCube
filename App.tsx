@@ -377,6 +377,19 @@ const App: React.FC = () => {
 
         <WisdomDisplay activeWisdom={activeWisdom} isSpinning={isSpinning || isDragging} />
       </main>
+
+      {/* Footer with GitHub Link */}
+      <footer className="relative z-10 mt-16 text-center pb-8">
+        <a 
+          href="https://github.com/voku/MagicTypeCube" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors duration-200 text-sm font-medium group"
+        >
+          <Icon name="Github" size={18} className="group-hover:scale-110 transition-transform" />
+          <span>Contribute on GitHub</span>
+        </a>
+      </footer>
     </div>
   );
 };
