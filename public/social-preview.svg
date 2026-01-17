@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <!-- Cube gradient -->
+    <linearGradient id="cubeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <!-- Accent gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="url(#accentGrad)" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="150" fill="url(#accentGrad)" opacity="0.1"/>
+  
+  <!-- Large 3D Cube on left side -->
+  <g transform="translate(200, 315)">
+    <!-- Back face -->
+    <path d="M-80,-80 L80,-80 L120,-40 L-40,-40 Z" fill="#4338ca" opacity="0.7"/>
+    <!-- Top face -->
+    <path d="M-80,-80 L-40,-120 L120,-120 L80,-80 Z" fill="url(#cubeGrad)" opacity="0.9"/>
+    <!-- Front face -->
+    <path d="M-80,-80 L-80,80 L-40,120 L-40,-40 Z" fill="#5b21b6" opacity="0.8"/>
+    <!-- Right face -->
+    <path d="M80,-80 L80,80 L120,40 L120,-40 Z" fill="#6d28d9" opacity="0.8"/>
+    <!-- Bottom face -->
+    <path d="M-80,80 L80,80 L120,40 L-40,40 Z" fill="#4c1d95" opacity="0.9"/>
+    <!-- Front face main -->
+    <path d="M-80,-80 L80,-80 L80,80 L-80,80 Z" fill="url(#cubeGrad)"/>
+    
+    <!-- PHP symbol on front face -->
+    <text x="0" y="15" font-family="monospace, 'Courier New'" font-size="80" font-weight="bold" fill="white" text-anchor="middle" opacity="0.9">
+      PHP
+    </text>
+  </g>
+  
+  <!-- Title and description on right side -->
+  <g transform="translate(450, 220)">
+    <!-- Title -->
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="68" font-weight="bold" fill="white">
+      Magic Type Cube
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#cbd5e1">
+      Interactive 3D PHP Static Analysis
+    </text>
+    <text x="0" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#cbd5e1">
+      Wisdom Explorer
+    </text>
+    
+    <!-- Features/Keywords -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="150" height="36" rx="18" fill="#6366f1" opacity="0.2"/>
+      <text x="75" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#a5b4fc" text-anchor="middle">Type Safety</text>
+      
+      <rect x="165" y="0" width="160" height="36" rx="18" fill="#8b5cf6" opacity="0.2"/>
+      <text x="245" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#c4b5fd" text-anchor="middle">Best Practices</text>
+      
+      <rect x="340" y="0" width="130" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="405" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#d8b4fe" text-anchor="middle">Interactive</text>
+    </g>
+  </g>
+  
+  <!-- Bottom attribution -->
+  <text x="600" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#64748b" text-anchor="middle">
+    voku.github.io/MagicTypeCube
+  </text>
+</svg>
